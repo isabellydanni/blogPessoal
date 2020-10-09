@@ -5,6 +5,7 @@ import { Tema } from '../model/Tema';
 import { PostagemService } from '../service/postagem.service';
 import { TemaService } from '../service/tema.service';
 import { Router } from '@angular/router';
+import { environment } from 'src/environments/environment.prod';
 
 @Component({
   selector: 'app-feed',
@@ -34,8 +35,8 @@ export class FeedComponent implements OnInit {
 
   ngOnInit(){
 
-    let token = localStorage.getItem('token')
-    if(token == null){
+    let token = environment.token
+    if(token == ''){
       this.router.navigate(['/login'])
       this.alerta.showAlertInfo('Faça o login antes de entrar no feed ...')
     }

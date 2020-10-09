@@ -1,4 +1,6 @@
 <div class="container">
+  <br>
+  <br>
 
   <div class="row">
 
@@ -90,7 +92,7 @@
                 <div class="card-body" >
                   <p class="card-text" aria-describedby="texto"> {{item.texto}} </p>
                   <small id="texto" class="form-text m-0 text-muted mb-3 text-monospace">
-                    Postado em {{item.data | date: 'dd/MM/yyyy'}} às {{item.data | date:'HH:mm'}}</small>
+                    Postado em {{item.date | date: 'dd/MM/yyyy'}} às {{item.date | date:'HH:mm'}}</small>
                 </div>
             </div>
             </div>
@@ -127,7 +129,7 @@
                 <div class="card-body" >
                   <p class="card-text" aria-describedby="texto"> {{post.texto}} </p>
                   <small id="texto" class="form-text m-0 text-muted mb-3 text-monospace">
-                    Postado em {{post.date | date: 'dd/MM/yyyy'}} às {{post.date | date:'HH:mm'}}</small>
+                    Postado em {{post.data | date: 'dd/MM/yyyy'}} às {{post.data | date:'HH:mm'}}</small>
                 </div>
 
                 </div>
@@ -141,3 +143,4 @@
     </div>
   </div>
 </div>
+
